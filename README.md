@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Диас Валеев](https://up.htmlacademy.ru/adaptive/31/user/18719).
-* Наставник: `Неизвестно`.
+* Наставник: [Кексобот](https://htmlacademy.ru/intensive/adaptive).
 
 ---
 
