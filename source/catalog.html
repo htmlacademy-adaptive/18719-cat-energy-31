@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Energy Каталог</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -11,7 +15,12 @@
     <header class="header">
       <nav class="nav">
         <a class="nav__logo" href="index.html">
-          <img src="#" width="202" height="59" alt="Логотип Cat Energy">
+          <picture>
+            <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+            <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <img class="nav__logo-img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          </picture>
+          <img class="nav__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Торговая марка Cat Energy">
         </a>
 
         <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -39,7 +48,11 @@
         <ul class="products__list">
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy PRO 500 г с курицей">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/chicken-500-desktop@1x.png 1x, images/chicken-500-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chicken-500-tablet@1x.png 1x, images/chicken-500-tablet@2x.png 2x">
+                <img class="product__img" src="images/chicken-500-mobile@1x.png" srcset="images/chicken-500-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy PRO 500 г с курицей оранжевого цвета">
+              </picture>
             </a>
 
             <a class="product__link" href="#">
@@ -68,7 +81,11 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy PRO 500 г с курицей">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/chicken-1000-desktop@1x.png 1x, images/chicken-1000-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/chicken-1000-tablet@1x.png 1x, images/chicken-1000-tablet@2x.png 2x">
+                <img class="product__img" src="images/chicken-1000-mobile@1x.png" srcset="images/chicken-1000-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy PRO 1000 г с курицей оранжевого цвета">
+              </picture>
             </a>
             <a class="product__link" href="#">
               <h3 class="product__title">
@@ -96,7 +113,11 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy PRO 500 г с рыбой">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/fish-500-desktop@1x.png 1x, images/fish-500-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/fish-500-tablet@1x.png 1x, images/fish-500-tablet@2x.png 2x">
+                <img class="product__img" src="images/fish-500-mobile@1x.png" srcset="images/fish-500-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy PRO 500 г с рыбой зелёного цвета">
+              </picture>
             </a>
             <a class="product__link" href="#">
               <h3 class="product__title">
@@ -124,7 +145,11 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy PRO 500 г с рыбой">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/fish-1000-desktop@1x.png 1x, images/fish-1000-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/fish-1000-tablet@1x.png 1x, images/fish-1000-tablet@2x.png 2x">
+                <img class="product__img" src="images/fish-1000-mobile@1x.png" srcset="images/fish-1000-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy PRO 1000 г с рыбой зелёного цвета">
+              </picture>
             </a>
             <a class="product__link" href="#">
               <h3 class="product__title">
@@ -152,7 +177,11 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy SLIM 500 г с гречкой">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-500-desktop@1x.png 1x, images/buckwheat-500-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-500-tablet@1x.png 1x, images/buckwheat-500-tablet@2x.png 2x">
+                <img class="product__img" src="images/buckwheat-500-mobile@1x.png" srcset="images/buckwheat-500-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy SLIM 500 г с гречкой синего цвета">
+              </picture>
             </a>
             <a class="product__link" href="#">
               <h3 class="product__title">
@@ -180,7 +209,11 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy SLIM 1000 г с гречкой">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x">
+                <img class="product__img" src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy SLIM 1000 г с гречкой синего цвета">
+              </picture>
             </a>
             <a class="product__link" href="#">
               <h3 class="product__title">
@@ -208,7 +241,11 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="#">
-              <img class="product__img" src="#" width="140" height="107" alt="Питание для котов Cat Energy SLIM 500 г с рисом">
+              <picture>
+                <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/rice-500-desktop@1x.png 1x, images/rice-500-desktop@2x.png 2x">
+                <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/rice-500-tablet@1x.png 1x, images/rice-500-tablet@2x.png 2x">
+                <img class="product__img" src="images/rice-500-mobile@1x.png" srcset="images/rice-500-mobile@2x.png 2x" width="140" height="107" alt="Питание для котов Cat Energy SLIM 500 г с рисом фиолетового цвета">
+              </picture>
             </a>
             <a class="product__link" href="#">
               <h3 class="product__title">
@@ -312,7 +349,11 @@
       <section class="footer__map map">
         <h2 class="visually-hidden">Адрес</h2>
 
-        <img src="#" width="320" height="362" alt="Адрес на карте">
+        <picture>
+          <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="map__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Адрес на карте - Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+        </picture>
 
         <div class="map__box">
           <p class="map__text">
@@ -333,7 +374,7 @@
 
       <div class="footer__row">
         <a class="footer__logo" href="index.html">
-          <img src="#" width="128" height="24" alt="Логотип Cat Energy">
+          <img class="footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Торговая марка Cat Energy">
         </a>
 
         <section class="social">
