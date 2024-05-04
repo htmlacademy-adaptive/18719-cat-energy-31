@@ -1,0 +1,16 @@
+.button {
+  padding: 10px;
+  font-family: $font-secondary;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &--primary {
+    background-color: $bg-primary;
+  }
+
+  &--secondary {
+    color: $color-primary;
+    background-color: $bg-secondary;
+  }
+}

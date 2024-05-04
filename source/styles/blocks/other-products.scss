@@ -1,0 +1,45 @@
+.other-products__title,
+.other-products__heading {
+  font-family: $font-secondary;
+  font-weight: 400;
+}
+
+.other-products__heading,
+.other-products__link,
+.other-products__text {
+  font-size: 16px;
+}
+
+.other-products__title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-secondary;
+}
+
+.other-products__list {
+  @include list-style;
+}
+
+.other-products__heading {
+  line-height: 16px;
+  color: $color-quaternary;
+  text-transform: uppercase;
+}
+
+.other-products__count,
+.other-products__total {
+  line-height: 14px;
+}
+
+.other-products__link {
+  line-height: 20px;
+}
+
+.other-products__box {
+  background-color: $bg-primary;
+}
+
+.other-products__text {
+  line-height: 20px;
+  color: $white;
+}

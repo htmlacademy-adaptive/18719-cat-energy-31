@@ -1,0 +1,16 @@
+.nav__logo,
+.nav__link {
+  text-decoration: none;
+}
+
+.nav__list {
+  @include list-style;
+}
+
+.nav__link {
+  font-family: $font-secondary;
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-secondary;
+  text-transform: uppercase;
+}

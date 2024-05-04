@@ -1,0 +1,36 @@
+.newsletter__title,
+.newsletter__text,
+.newsletter__input {
+  font-family: $font-secondary;
+}
+
+.newsletter__title,
+.newsletter__text {
+  line-height: 24px;
+  color: $color-secondary;
+}
+
+.newsletter__title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.newsletter__text {
+  font-size: 16px;
+}
+
+.newsletter__input {
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $color-primary;
+  }
+}
+
+.newsletter__button {
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+}

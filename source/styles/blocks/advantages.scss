@@ -1,0 +1,10 @@
+.advantages__heading {
+  font-family: $font-secondary;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-secondary;
+}
+
+.advantages__list {
+  @include list-style;
+}
