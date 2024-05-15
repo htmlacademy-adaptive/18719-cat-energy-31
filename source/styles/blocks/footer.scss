@@ -2,7 +2,37 @@
   background-color: $bg-secondary;
 }
 
-.footer__copyright-text {
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+.footer__logo {
+  width: 128px;
+  height: 24px;
+}
+
+.footer__copyright {
+  width: 100%;
+}
+
+.footer__copyright-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 20px;
+  color: $color-primary;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    background-image: url("../../icons/stack.svg#icon-htmlacademy");
+  }
 }

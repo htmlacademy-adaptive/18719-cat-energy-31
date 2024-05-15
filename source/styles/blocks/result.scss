@@ -33,3 +33,49 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.result__compare {
+  position: relative;
+}
+
+.result__move {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  background-color: $color-5;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid $color-5;
+    border-radius: 50%;
+    background-color: $white;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 18px;
+    background-color: $color-5;
+    mask-image: url("../../icons/stack.svg#icon-compare-arrows");
+    mask-repeat: no-repeat;
+    mask-size: 24px 18px;
+    mask-position: center;
+    transform: translate(-50%, -50%);
+  }
+}

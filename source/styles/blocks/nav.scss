@@ -3,6 +3,26 @@
   text-decoration: none;
 }
 
+.nav__toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: unset;
+
+  &--closed,
+  &--opened {
+    background-image: url("../../icons/stack.svg#icon-close-mobile");
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--opened {
+    background-image: url("../../icons/stack.svg#icon-open-mobile");
+    background-size: 24px 24px;
+  }
+}
+
 .nav__list {
   @include list-style;
 }

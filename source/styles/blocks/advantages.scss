@@ -1,4 +1,10 @@
+.advantages {
+  padding: 20px;
+}
+
 .advantages__heading {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 40px;
@@ -7,4 +13,55 @@
 
 .advantages__list {
   @include list-style;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.advantages__item {
+  display: flex;
+  gap: 20px;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $bg-primary;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages__item--leaf {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 25px 28px;
+  }
+}
+
+.advantages__item--water {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-water");
+    background-size: 26px 29px;
+  }
+}
+
+.advantages__item--food {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-food");
+    background-size: 25px 30px;
+  }
+}
+
+.advantages__item--weight {
+  &::before {
+    background-image: url("../../icons/stack.svg#icon-weight");
+    background-size: 25px 31px;
+  }
+}
+
+.advantages__text {
+  max-width: 200px;
+  margin: 0;
 }
