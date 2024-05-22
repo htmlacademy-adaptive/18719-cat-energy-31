@@ -1,23 +1,43 @@
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0 14px 20px;
+  border-bottom: 1px solid $bg-4;
+}
+
 .nav__logo,
 .nav__link {
   text-decoration: none;
 }
 
+.nav__logo {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  height: 38px;
+}
+
 .nav__toggle {
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  right: 0;
+  width: 66px;
+  height: 65px;
+  padding: 0;
   border: none;
   background-color: unset;
+  cursor: pointer;
 
-  &--closed,
-  &--opened {
+  &--opened,
+  &--closed {
     background-image: url("../../icons/stack.svg#icon-close-mobile");
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  &--opened {
+  &--closed {
     background-image: url("../../icons/stack.svg#icon-open-mobile");
     background-size: 24px 24px;
   }
@@ -25,6 +45,8 @@
 
 .nav__list {
   @include list-style;
+
+  display: none;
 }
 
 .nav__link {
@@ -33,4 +55,61 @@
   line-height: 20px;
   color: $color-secondary;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .nav {
+    gap: 74px;
+    padding: 25px 30px;
+    border-bottom: none;
+  }
+
+  .nav__logo {
+    gap: 13px;
+    height: 50px;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 13px;
+  }
+
+  .nav__link {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 55px 110px 29px;
+    z-index: 2;
+  }
+
+  .nav__logo {
+    gap: 14px;
+    height: 59px;
+  }
+
+  .nav__logo-text {
+    width: 118px;
+    height: 21px;
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: auto;
+    color: $white;
+
+    &--inner {
+      color: $color-3;
+    }
+  }
 }

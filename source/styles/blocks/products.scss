@@ -1,3 +1,21 @@
 .products__list {
   @include list-style;
 }
+
+@media (min-width: $tablet-width) {
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 0 30px 74px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    gap: 63px 80px;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 110px 74px;
+  }
+}

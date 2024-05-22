@@ -1,7 +1,27 @@
 .main__title {
+  margin: 0;
+  padding: 27px 20px 41px;
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: $white;
+  color: $color-secondary;
+  border-bottom: 1px solid $bg-4;
+}
+
+@media (min-width: $tablet-width) {
+  .main__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 18px 30px 84px;
+    border-bottom: unset;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__title {
+    max-width: $desktop-width;
+    padding: 18px 110px 84px;
+    margin: 0 auto;
+  }
 }
