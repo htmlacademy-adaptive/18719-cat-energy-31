@@ -1,6 +1,6 @@
 .main__title {
   margin: 0;
-  padding: 27px 20px 41px;
+  padding: 28px 20px 40px;
   font-family: $font-secondary;
   font-size: 36px;
   line-height: 36px;
@@ -13,7 +13,7 @@
   .main__title {
     font-size: 60px;
     line-height: 60px;
-    padding: 18px 30px 84px;
+    padding: 40px 30px 84px;
     border-bottom: unset;
   }
 }
@@ -21,7 +21,7 @@
 @media (min-width: $desktop-width) {
   .main__title {
     max-width: $desktop-width;
-    padding: 18px 110px 84px;
+    padding: 43px 110px 84px;
     margin: 0 auto;
   }
 }

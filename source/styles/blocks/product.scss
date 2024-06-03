@@ -5,13 +5,13 @@
   grid-template-rows: min-content min-content min-content;
   justify-content: center;
   align-items: center;
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
   border-bottom: 1px solid $bg-4;
 
   &--more {
     display: flex;
     flex-direction: column;
-    padding-top: 78px;
+    padding-top: 79px;
 
     &::before {
       content: "";
@@ -19,7 +19,7 @@
       top: 25px;
       width: 30px;
       height: 30px;
-      background-image: url("../../icons/stack.svg#icon-plus");
+      background-image: url("../../icons/stack.svg#icon-plus-mobile");
       background-repeat: no-repeat;
     }
   }
@@ -27,6 +27,11 @@
 
 .product__link {
   text-decoration: none;
+
+  &--img,
+  &--title {
+    @include opacity-effect;
+  }
 
   &--img {
     grid-area: 1 / 1 / 3 / 2;
@@ -36,11 +41,12 @@
     grid-area: 1 / 2 / 2 / 3;
     align-self: flex-start;
     max-width: 60%;
+    margin-top: 2px;
   }
 
   &--order {
     grid-area: 3 / 1 / 4 / 3;
-    margin-top: 17px;
+    margin-top: 13px;
     text-align: center;
   }
 
@@ -55,7 +61,7 @@
 
   grid-area: 2 / 2 / 3 / 3;
   align-self: flex-end;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .product__title,
@@ -110,11 +116,13 @@
         left: 132px;
         width: 60px;
         height: 60px;
+        background-image: url("../../icons/stack.svg#icon-plus-tablet");
       }
 
       &::after {
         content: "";
         position: absolute;
+        z-index: -1;
         top: 81px;
         left: 0;
         width: 324px;
@@ -128,17 +136,18 @@
     display: block;
 
     &--img {
-      margin-bottom: 22px;
+      margin-bottom: 19px;
     }
 
     &--title {
       max-width: 60%;
-      margin: 0 auto 20px;
+      margin: 0 auto 11px;
     }
   }
 
   .product__list {
     align-self: center;
+    margin-bottom: 30px;
   }
 
   .product__item {
@@ -159,17 +168,22 @@
   }
 
   .product__text {
-    width: 60%;
+    width: 70%;
     margin: 0 auto 82px;
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product {
     width: 245px;
+    min-height: 511px;
+    padding-left: 38px;
+    padding-right: 38px;
 
     &--more {
-      padding-top: 242px;
+      padding-top: 231px;
 
       &::before {
         left: 92px;
@@ -181,13 +195,30 @@
     }
   }
 
+  .product__link {
+    &--img {
+      margin-bottom: 8px;
+    }
+
+    &--title {
+      max-width: 80%;
+      margin: 0 auto 17px;
+    }
+  }
+
+  .product__list {
+    margin-bottom: 35px;
+  }
+
   .product__title {
     &--more {
       width: 80%;
+      margin-bottom: 25px;
     }
   }
 
   .product__text {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 91px;
   }
 }

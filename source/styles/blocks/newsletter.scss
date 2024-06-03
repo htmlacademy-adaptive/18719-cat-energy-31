@@ -19,7 +19,9 @@
 }
 
 .newsletter__title {
-  width: 100%;
+  @include title-lines;
+
+  align-self: flex-start;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 32px;
@@ -49,6 +51,10 @@
   &::placeholder {
     color: $color-primary;
   }
+
+  &:user-invalid {
+    outline: 2px solid #ff8282;
+  }
 }
 
 .newsletter__button {
@@ -65,9 +71,8 @@
   }
 
   .newsletter__title {
-    width: 100%;
     margin-bottom: 66px;
-    padding: 0 39px;
+    margin-left: 39px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -80,6 +85,7 @@
 
   .newsletter__form {
     flex-direction: row;
+    justify-content: center;
     padding: 0 38px;
   }
 
@@ -96,12 +102,12 @@
   .newsletter {
     max-width: $desktop-width;
     margin: 0 auto;
-    padding: 0 110px 84px;
+    padding: 0 110px 87px;
   }
 
   .newsletter__title {
-    margin-bottom: 72px;
-    padding: 0;
+    margin-bottom: 71px;
+    margin-left: 0;
     font-size: 40px;
     line-height: 40px;
   }

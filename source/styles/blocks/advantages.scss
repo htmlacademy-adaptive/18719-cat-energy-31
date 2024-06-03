@@ -25,7 +25,8 @@
 
   &::before {
     content: "";
-    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
     height: 60px;
     background-color: $bg-primary;
     background-repeat: no-repeat;
@@ -62,13 +63,13 @@
 }
 
 .advantages__text {
-  max-width: 200px;
   margin: 0;
+  margin-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding: 0 30px 47px;
+    padding: 0 30px 46px;
   }
 
   .advantages__heading {
@@ -78,27 +79,45 @@
   }
 
   .advantages__list {
+    counter-reset: my-numbers;
     flex-flow: row wrap;
     gap: 37px 134px;
   }
 
   .advantages__item {
+    position: relative;
     flex-direction: column;
     gap: 31px;
     max-width: 250px;
     padding-top: 40px;
 
     &::before {
-      width: 80px;
+      min-width: 80px;
+      max-width: 80px;
       height: 80px;
       background-color: $bg-primary;
       background-repeat: no-repeat;
       background-position: center;
     }
+
+    &::after {
+      counter-increment: my-numbers;
+      content: "" counter(my-numbers);
+      position: absolute;
+      top: 0;
+      left: 113px;
+      z-index: -1;
+      min-width: 112px;
+      height: 280px;
+      font-family: $font-secondary;
+      line-height: 280px;
+      font-size: 280px;
+      color: $bg-secondary;
+    }
   }
 
   .advantages__text {
-    max-width: unset;
+    margin-top: 0;
     margin-bottom: 57px;
     font-size: 16px;
     line-height: 24px;
@@ -114,5 +133,49 @@
 
   .advantages__list {
     gap: 37px 73px;
+  }
+
+  .advantages__item--leaf {
+    &::after {
+      left: 118px;
+    }
+  }
+
+  .advantages__item--water {
+    .advantages__text {
+      margin-left: 1px;
+    }
+
+    &::before {
+      margin-left: 2px;
+    }
+  }
+
+  .advantages__item--food {
+    .advantages__text {
+      margin-left: 3px;
+    }
+
+    &::before {
+      margin-left: 4px;
+    }
+
+    &::after {
+      left: 117px;
+    }
+  }
+
+  .advantages__item--weight {
+    .advantages__text {
+      margin-left: 5px;
+    }
+
+    &::before {
+      margin-left: 6px;
+    }
+
+    &::after {
+      left: 120px;
+    }
   }
 }

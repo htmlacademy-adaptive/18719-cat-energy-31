@@ -29,13 +29,20 @@
 }
 
 .map__img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.map__iframe {
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
   .map__box {
-    padding: 60px 70px;
+    padding: 60px 70px 62px;
   }
 
   .map__text,
@@ -59,21 +66,26 @@
   .map__city {
     font-size: 16px;
   }
+
+  .map__iframe {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .map__container {
     position: relative;
-    max-width: $desktop-width;
+    //max-width: $desktop-width;
     margin: 0 auto;
   }
 
   .map__box {
     position: absolute;
+    z-index: 1;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 610px);
     width: 565px;
-    padding: 60px 80px;
+    padding: 60px 75px 60px 80px;
 
     &--inner {
       background-color: $white;

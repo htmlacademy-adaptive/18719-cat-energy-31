@@ -4,13 +4,29 @@
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 
   &--primary {
     background-color: $bg-primary;
+
+    &:hover,
+    &:focus {
+      background-color: $bg-6;
+    }
+
+    &:active {
+      color: rgba($color: $white, $alpha: 0.3);
+    }
   }
 
   &--secondary {
     color: $color-primary;
     background-color: $bg-secondary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $bg-7;
+    }
   }
 }

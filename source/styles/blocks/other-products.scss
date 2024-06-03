@@ -1,5 +1,5 @@
 .other-products {
-  padding: 25px 20px 0;
+  padding: 24px 20px 0;
   margin-bottom: 40px;
 }
 
@@ -17,7 +17,9 @@
 }
 
 .other-products__title {
-  margin-bottom: 36px;
+  @include title-lines;
+
+  margin-bottom: 35px;
   font-size: 24px;
   line-height: 24px;
   color: $color-secondary;
@@ -34,7 +36,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, min-content);
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   border-bottom: 1px solid $bg-5;
 }
 
@@ -49,7 +51,7 @@
 .other-products__count,
 .other-products__total {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 14.7px;
   line-height: 14px;
 }
 
@@ -119,13 +121,13 @@
 
   .other-products__title {
     margin-bottom: 80px;
-    padding: 0 40px;
+    margin-left: 40px;
     font-size: 32px;
     line-height: 32px;
   }
 
   .other-products__list {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
     border-left: 1px solid $bg-5;
     border-right: 1px solid $bg-5;
   }
@@ -133,9 +135,9 @@
   .other-products__item {
     grid-template-columns: 1fr 1fr 83px;
     grid-template-rows: repeat(2, min-content);
-    gap: 25px 10px;
+    gap: 24px 10px;
     align-items: flex-end;
-    padding: 26px 38px 28px;
+    padding: 26px 37px 28px;
   }
 
   .other-products__heading {
@@ -173,7 +175,7 @@
     align-items: center;
     width: 707px;
     min-height: 200px;
-    padding: 56px 125px 63px;
+    padding: 65px 125px 63px;
     text-align: center;
     background-image:
       linear-gradient(rgba($bg-primary, 0.85) 100%, $white 0%),
@@ -210,7 +212,7 @@
     display: grid;
     grid-template-columns: repeat(2, min-content);
     grid-template-rows: repeat(2, min-content);
-    gap: 80px;
+    gap: 79px 81px;
     max-width: $desktop-width;
     margin: 0 auto 96px;
     padding: 0 110px;
@@ -233,11 +235,11 @@
   }
 
   .other-products__item {
-    grid-template-columns: 1fr 200px 50px 244px;
+    grid-template-columns: 294px 211px 50px 244px;
     grid-template-rows: 1fr;
-    gap: 0 40px;
+    gap: 0 32px;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 0 16px;
   }
 
   .other-products__heading {
@@ -246,11 +248,13 @@
 
   .other-products__count {
     grid-area: 1 / 2 / 2 / 3;
+    margin-top: 3px;
     text-align: left;
   }
 
   .other-products__total {
     grid-area: 1 / 3 / 2 / 4;
+    margin-top: 3px;
     text-align: left;
   }
 
