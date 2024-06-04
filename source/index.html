@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Cat Energy</title>
+
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -33,7 +39,7 @@
             <a class="nav__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Подбор программы</a>
+            <a class="nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -51,12 +57,16 @@
           </p>
           <div class="hero__img-wrapper">
             <picture>
+              <source width="552" height="499" type="image/webp" media="(min-width: 1440px)" srcset="images/can-desktop@1x.webp 1x, images/can-desktop@2x.webp 2x">
+              <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/can-tablet@1x.webp 1x, images/can-tablet@2x.webp 2x">
+              <source width="280" height="270" type="image/webp" srcset="images/can-mobile@1x.webp 1x, images/can-mobile@2x.webp 2x">
+
               <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/can-desktop@1x.png 1x, images/can-desktop@2x.png 2x">
               <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/can-tablet@1x.png 1x, images/can-tablet@2x.png 2x">
               <img class="hero__img" src="images/can-mobile@1x.png" srcset="images/can-mobile@2x.png 2x" width="280" height="270" alt="Питание для котов Cat Energy">
             </picture>
           </div>
-          <a class="hero__link button button--primary" href="#">Подобрать программу</a>
+          <a class="hero__link button button--primary" href="form.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -71,7 +81,7 @@
               лазить по деревьям? Пора на диету! Cat Energy Slim поможет
               вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programs__link" href="#">Каталог Slim</a>
+            <a class="programs__link" href="catalog.html">Каталог Slim</a>
           </li>
           <li class="programs__item programs__item--pro">
             <h3 class="programs__title">Набор массы</h3>
@@ -80,7 +90,7 @@
               Серия Cat Energy Pro поможет вашему коту нарастить
               необходимые мышцы!
             </p>
-            <a class="programs__link" href="#">Каталог Pro</a>
+            <a class="programs__link" href="catalog.html">Каталог Pro</a>
           </li>
         </ul>
       </section>
@@ -157,10 +167,16 @@
 
           <div class="result__compare slider">
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/compare-before-tablet@1x.webp 1x, images/compare-before-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/compare-before-mobile@1x.webp 1x, images/compare-before-mobile@2x.webp 2x">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/compare-before-tablet@1x.png 1x, images/compare-before-tablet@2x.png 2x">
               <img class="slider__before-img" src="images/compare-before-mobile@1x.png" srcset="images/compare-before-mobile@2x.png 2x" width="280" height="256" alt="До - толстый котик">
             </picture>
             <picture>
+              <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/compare-after-tablet@1x.webp 1x, images/compare-after-tablet@2x.webp 2x">
+              <source width="280" height="256" type="image/webp" srcset="images/compare-after-mobile@1x.webp 1x, images/compare-after-mobile@2x.webp 2x">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/compare-after-tablet@1x.png 1x, images/compare-after-tablet@2x.png 2x">
               <img class="slider__after-img" src="images/compare-after-mobile@1x.png" srcset="images/compare-after-mobile@2x.png 2x" width="280" height="256" alt="После - худенький котик">
             </picture>
@@ -193,6 +209,10 @@
 
           <noscript>
             <picture>
+              <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+              <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+              <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
+
               <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
               <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
               <img class="map__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Адрес на карте - Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
@@ -207,6 +227,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            title="Адрес на карте - Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
           ></iframe>
         </div>
       </section>

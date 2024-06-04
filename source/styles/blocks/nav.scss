@@ -27,6 +27,8 @@
 }
 
 .nav__toggle {
+  @include opacity-effect;
+
   position: absolute;
   right: 0;
   width: 66px;
@@ -63,6 +65,7 @@
 @media (max-width: ($tablet-width - 1)) {
   .nav--nojs .nav__list {
     position: static;
+    display: block;
   }
 
   .nav--nojs {
